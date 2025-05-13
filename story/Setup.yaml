@@ -3,15 +3,16 @@ backgrounds:
   room: assets/backgrounds/room_day.jpg
   room_night: assets/backgrounds/room_night.jpg
   room_night_light: assets/backgrounds/room_night_light.jpg
+  bus_station_afternoon: assets/backgrounds/bus_station_afternoon.jpg
 
 characters:
   deuzi:
-    displayName: Deuzilene
+    displayName: Janaína
     speechColour: "#ca90cf"
     looks:
-      normal: assets/characters/Char3NormalSchool.png
-      happy: assets/characters/Char3HappySchool.png
-      angry: assets/characters/Char3AngrySchool.png
+      normal: assets/characters/Char3Normal.png
+      happy: assets/characters/Char3Happy.png
+      angry: assets/characters/Char3Angry.png
 
 cgs:
   phone1: assets/objects/phone1.png
@@ -30,3 +31,4 @@ extra:
     sakura: assets/ambient/sakura-petals.png 17 26
     snowflakes: assets/ambient/snowflakes.png 17 17
     snowflakes_large: assets/ambient/snowflakes_large.png 64 64
+    
