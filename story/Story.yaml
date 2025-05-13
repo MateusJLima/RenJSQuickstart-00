@@ -1,43 +1,67 @@
 start:
   - play morningBGM:
-  - show room: WITH FADE CONTINUE
-  - show deuzi: happy AT CENTER WITH FADE
-  - deuzi says: Hello, welcome to (bold)the Quickstart!(end)
+  - show bus_station_afternoon: WITH FADE CONTINUE
+  - show deuzi: angry AT CENTER WITH FADE
+  - deuzi says: Eai, meu! Cê tá atrasado (bold)parça!(end)
   - wait: 300
-  - deuzi says normal: Are you ready to create great visual novels?
+  - deuzi says angry: Onde você tava? Eu fiquei te esperando por horas!
   - choice:
-    - "Yes!":
-      - deuzi says happy: That's great! Go ahead!
-    - "Not yet!":
-      - deuzi says: Well, I'll be here when you're ready!
-  - deuzi says normal: If you're new, don't forget to play (bold)the Tutorial(end) game, where me and my friends will show you around the basic features of RenJS.
-  - deuzi says happy: And if you already have some experience, you can go ahead and start writing!
+    - "Foi mal":
+      - deuzi says normal: Tá bom, só não faz mais isso.
+    - "Horas? Não exagera":
+      - deuzi says angry: Diz isso para minhas pernas, esse ponto de ônibus não tem onde sentar!
+  - wait: 300
+  - deuzi says normal: Unf...
+  - wait: 300
+  - deuzi says happy: Certo! Acho que ainda dá tempo de chegar lá...
+  - deuzi says normal: Isso se o próximo busão não atrasar também.
+  - choice:
+    - "Pra onde nós vamos mesmo?":
+      - deuzi says angry: Pô, é sério isso?
+      - deuzi says normal: Não lembra que o Caio convidou todo mundo pra colar na festa dele?
+    - "Esperar mais um pouco não vai te matar, hehe":
+      - deuzi says angry: Engraçado, muito engraçado... Aff.
+  - wait: 300
+  - deuzi says normal: Se liga! Quando a gente chegar lá, vê se não some igual da última vez. O pessoal ficou preocupado e sobrou pra mim..
+  - deuzi says: Não entendo isso, sempre perguntam de você pra mim. Acham que eu sou sua mãe ou algo assim? Nada a ver...
+  - choice:
+    - "Quem perguntou de mim?":
+      - deuzi says normal: Todos ficaram me mandando mensagem, você simplesmente sumiu naquele dia.
+    - "Cê tá me dando bronca igual minha mãe mesmo...":
+      - deuzi says happy: E vou continuar se der mais mancada!
+  - wait: 900
+  - deuzi says happy: Aee, o ônibus tá vindo! Dá sinal aí!
+  - wait: 300
+  - deuzi says normal: Bora lá, a gente continua o papo no busão.
   - scene: endGame
 
 endGame:
-  - deuzi says normal: Quickstart over!
   - hide ALL:
   - effect ROLLINGCREDITS:
     endGame: true
     text:
-      - RenJS.V2 created by
+      - Escrito por
+      - Mateus J. Lima
+      - null
+      - Utilizando
+      - RenJS.V2 criado por
       - lunafromthemoon
       - null
-      - In collaboration with
+      - Em colaboração com
       - RockDaFox
       - null
-      - Inspired by Ren'Py
-      - Powered by PhaserJS
+      - Inspirado por Ren'Py
+      - Disponibilizado por PhaserJS
       - null
       - null
-      - Thanks for playing
-      - The Quickstart Game
-      - null
-      - background art and cgs by
+      - Arte de background e cgs por
       - konett
       - null
-      - characters by
+      - Personagem por
       - Shida
       - null
-      - music by
+      - Musica por
       - Evan Schaeffer
+      - null
+      - :)
+      
